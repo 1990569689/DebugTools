@@ -78,7 +78,7 @@ public class AboutActivity extends AppCompatActivity {
         binding.code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://github.com/1990569689/DebugTools";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);            }
         });
@@ -93,7 +93,7 @@ public class AboutActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                String shareBody = "这是一段需要分享的文本内容。";
+                String shareBody = "一款精美的蓝牙和MQTT集成调试工具https://github.com/1990569689/DebugTools";
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(shareIntent, "分享应用"));
             }
