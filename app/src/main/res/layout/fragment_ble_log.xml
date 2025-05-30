@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.gallery.GalleryFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"
+                android:background="@color/teal_200"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="成功发送：0字节"
+                android:id="@+id/sends"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"
+                android:background="@color/purple_700" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="成功收到：0字节"
+                android:id="@+id/receive"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/format"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="格式："
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/format_text"
+        android:text="UTF-8"
+
+        android:textColor="@color/black"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/charts"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:trackTint="#57595858"
+        app:thumbTint="@color/purple_500"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="显示图表" />
+</LinearLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#667C7B7B"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ble_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="8dp"
+                android:text=""
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:id="@+id/chart"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/data"
+                android:background="@null"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="6dp"
+                app:icon="@drawable/baseline_send_24"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="单次发送" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/radioGroup"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单次发送"
+                        android:checked="true"
+                        android:id="@+id/radioButton"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="连续发送"
+                        android:id="@+id/radioButton2"/>
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/setTime"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="时间间隔："/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/time"
+                        android:textColor="@color/black"
+                        android:text="1000ms"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

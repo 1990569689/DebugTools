@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:minHeight="60dp"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:text="Service"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_uuid"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:text="UUID: 00001800-0000-1000-8000-00805f9b34fb"
+            android:textColor="#C95C5C5C"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_properties"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="UUID: 00001800-0000-1000-8000-00805f9b34fb"
+            android:textColor="#C95C5C5C"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/send"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/baseline_arrow_upward_24"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/read"
+        android:visibility="gone"
+        android:src="@drawable/baseline_arrow_downward_24"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/notify"
+        android:visibility="gone"
+        android:src="@drawable/baseline_notifications_active_24"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

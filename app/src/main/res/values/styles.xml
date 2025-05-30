@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomMaterialSwitchStyle" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <!-- 关闭状态下的轨道颜色 -->
+        <item name="colorControlActivated">@color/purple_700</item>
+        <!-- 打开状态下的轨道颜色 -->
+        <item name="colorSwitchThumbNormal">@color/black</item>
+        <!-- 关闭状态下的拇指颜色 -->
+
+    </style>
+</resources>

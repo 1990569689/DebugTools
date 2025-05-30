@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ddonging.debugtools'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ddonging.debugtools"
+        minSdk 22
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
+    //这是一个用于Android开发的第三方库依赖，主要功能是：
+    //库名称：BaseRecyclerViewAdapterHelper
+    //开发者：CymChad（GitHub用户/组织）
+    //版本：3.0.6
+    //作用：这是一个强大的RecyclerView适配器帮助库，可以：
+    //简化RecyclerView的适配器(Adapter)编写
+    //提供丰富的功能如：
+    //头部/尾部视图
+    //加载更多
+    //拖拽排序
+    //多类型布局
+    //动画效果等
+    //依赖方式：implementation表示这是项目直接使用的依赖
+    //这个库在GitHub上开源，通过jitpack仓库分发（从您的settings.gradle中可以看到已配置jitpack仓库）。
+    implementation 'com.github.Jasonchenlijian:FastBle:2.4.0'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5"
+    implementation "org.eclipse.paho:org.eclipse.paho.android.service:1.1.1"
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

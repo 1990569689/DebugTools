@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">易调试</string>
+
+    <string name="app_version">1.0</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">单片机调试工具</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_connect">连接</string>
+    <string name="action_settings">设置</string>
+
+    <string name="action_export">导出数据到Excel</string>
+    <string name="action_mtu">设置MTU</string>
+    <string name="action_exit">退出</string>
+    <string name="action_clear">清空日志</string>
+
+
+    <string name="action_about">关于</string>
+
+    <string name="menu_home">BLE蓝牙</string>
+    <string name="menu_gallery">MQTT</string>
+    <string name="menu_slideshow">设置</string>
+    <string name="menu_about">关于</string>
+</resources>

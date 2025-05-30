@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/account"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="FastBle"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/contact"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="crashreport"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/add"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="mqttv3"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/open"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="MPAndroidChart"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/code"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="jexcelapi"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/share"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="BaseRecyclerViewAdapterHelper"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#667C7B7B"/>
+</LinearLayout>
